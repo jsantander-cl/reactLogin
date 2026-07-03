@@ -13,7 +13,7 @@ function Navbar() {
         isDark ? 'bg-[#171a5c] border-[#2b2f7a]' : 'bg-white border-gray-200'
       }`}
     >
-      {/* Logo a la izquierda */}
+      
       <div className="flex items-center gap-2">
         <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${isDark ? 'bg-indigo-600' : 'bg-indigo-600'}`}>
           <GridIcon className="w-5 h-5" fill="white" stroke="none" />
@@ -21,7 +21,7 @@ function Navbar() {
         <span className={`font-bold ${isDark ? 'text-white' : 'text-gray-900'}`}>SaaS Dash</span>
       </div>
 
-      {/* Usuario + divisor + Log Out a la derecha */}
+      
       <div className="flex items-center gap-4">
         <div className="hidden sm:block text-right">
           <p className={`text-sm font-semibold leading-tight ${isDark ? 'text-white' : 'text-gray-900'}`}>
@@ -32,7 +32,7 @@ function Navbar() {
           </p>
         </div>
 
-        {/* Avatar con iniciales, reacciona al nombre automáticamente */}
+        
         <Avatar name={user.name} />
 
         <div className={`hidden sm:block w-px h-6 ${isDark ? 'bg-[#3a3f8f]' : 'bg-gray-200'}`} />
